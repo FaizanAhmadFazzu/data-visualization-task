@@ -1,0 +1,44 @@
+.heading {
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.dataContainer {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.dataWrapper {
+    display: flex;
+}
+
+.dataRow {
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.dataRow:nth-child(4) {
+    border-right: 2px solid black;
+}
+
+
+.dataHeading,
+.dataItem {
+    border-bottom: 2px solid black;
+    padding: 10px 20px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+}
+
+.dataItem:nth-child(1){
+    font-weight: 600;
+}
+
+.dataHeading {
+    font-weight: 600;
+    width: 125px;
+}
