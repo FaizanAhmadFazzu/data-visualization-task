@@ -8,7 +8,7 @@ In the project directory, you can run:
 
 ### `yarn start`
 
-Then You will show page with two data tables
+Open http://localhost:3000 with your browser to see the result. Then You will show page with two data tables
 
 ### 1. Class-wise statistics for Flavanoids
 ![Screenshot from 2023-09-14 13-21-46](https://github.com/FaizanAhmadFazzu/data-visualization-task/assets/50393638/4d58929d-f8b7-43b8-8ed7-e270c06f20e8)
