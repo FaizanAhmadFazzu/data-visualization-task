@@ -11,7 +11,7 @@ export const calculateMedian = (data: number[]) => {
     const middle = Math.floor(sortedData.length / 2);
 
     if (sortedData.length % 2 === 0) {
-        return (sortedData[middle - 1] + sortedData[middle] / 2)
+        return (sortedData[middle - 1] + sortedData[middle]) / 2
     } else {
         return sortedData[middle];
     }
@@ -37,5 +37,5 @@ export const calculateMode = (data: number[]) => {
             maxFrequency = frequencyMap[value];
         } 
     }
-    return parseInt(mode);
+    return parseFloat(mode);
 }

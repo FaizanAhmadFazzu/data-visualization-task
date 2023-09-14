@@ -20,7 +20,7 @@ const App: React.FC = () => {
   // Function to calculate "Gammma" for a data point
   const calculateGamma = (dataPoint: Data) => {
     const { Ash, Magnesium, Hue } = dataPoint;
-    return Ash * Hue / Magnesium;
+    return (Ash * Hue) / Magnesium;
   }
 
   // Function to calculate class wise statistics
@@ -62,7 +62,7 @@ const App: React.FC = () => {
     <div className="container">
       <div className='wrapper'>
         <StatisticsTable classStatistics={classStatistics} title={"Class-wise Statistics for Flavanoids"} />
-        <StatisticsTable classStatistics={gammaStatistics} title={"Class-wise Statistics for \"Gamma\" Property."} />
+        <StatisticsTable classStatistics={gammaStatistics} gamaProperty={true} title={"Class-wise Statistics for \"Gamma\" Property."} />
       </div>
     </div>
   );

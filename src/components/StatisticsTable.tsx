@@ -3,10 +3,11 @@ import "./style.css";
 
 interface props {
     classStatistics: IStatisticData[];
-    title: string
+    title: string,
+    gamaProperty?: boolean
 }
 
-const StatisticsTable: React.FC<props> = ({ classStatistics, title }) => {
+const StatisticsTable: React.FC<props> = ({ classStatistics, title, gamaProperty }) => {
 
     return (
         <>
@@ -15,9 +16,9 @@ const StatisticsTable: React.FC<props> = ({ classStatistics, title }) => {
                 <div className="dataWrapper">
                     <div className="dataRow">
                         <div className="dataHeading">Measure</div>
-                        <div className="dataHeading">Flavanoids Mean</div>
-                        <div className="dataHeading">Flavanoids Median</div>
-                        <div className="dataHeading">Flavanoids Mode</div>
+                        <div className="dataHeading">{gamaProperty ? "Mean" : "Flavanoids Mean"}</div>
+                        <div className="dataHeading">{gamaProperty ? "Median" : "Flavanoids Median"}</div>
+                        <div className="dataHeading">{gamaProperty ? "Mode" : "Flavanoids Mode"}e</div>
                     </div>
                     {
                         classStatistics.map(data => (
